@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Delta PLC",
+    "price": 6500,
+    "category": "PLC",
+    "images": [
+      "/images/plcmodule/image.png",
+      "/images/plcmodule/image1.png",
+      "/images/plcmodule/image2.png"
+    ],
+    "description": "High performance PLC"
+  },
+  {
+    "id": 2,
+    "name": "Schneider VFD",
+    "price": 8500,
+    "category": "VFD",
+    "images": [
+      "/images/schneidervfd/image.png",
+      "/images/schneidervfd/image copy.png",
+      "/images/schneidervfd/image copy 2.png"
+    ],
+    "description": "Compact VFD"
+  },
+  {
+    "id": 3,
+    "name": "Omron Sensor",
+    "price": 2500,
+    "category": "Sensors",
+   "images": [
+      "/images/omronsensor/image.png",
+      "/images/omronsensor/image copy.png",
+      "/images/omronsensor/image copy 2.png"
+    ],
+    "description": "Industrial proximity sensor"
+  }
+]

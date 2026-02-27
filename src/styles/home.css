@@ -1,0 +1,9 @@
+.slider {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  text-align: center;
+  padding: 20px;
+}

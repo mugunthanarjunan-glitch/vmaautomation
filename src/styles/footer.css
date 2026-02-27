@@ -1,0 +1,16 @@
+.footer {
+  margin-top: 40px;
+  padding: 30px 20px;
+  background-color: #0d3b66;
+  color: white;
+  text-align: center;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}

@@ -1,0 +1,62 @@
+.cta-section {
+  background: #0d3b66;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cta-section h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cta-call,
+.cta-whatsapp {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cta-call {
+  background: white;
+  color: #0d3b66;
+}
+
+.cta-whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+.cta-call:hover {
+  transform: scale(1.05);
+}
+
+.cta-whatsapp:hover {
+  transform: scale(1.05);
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .cta-section h2 {
+    font-size: 28px;
+  }
+
+  .cta-section p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,109 @@
+/* Category Filter */
+.category-filter {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.category-filter::-webkit-scrollbar {
+  display: none;
+}
+
+.category-btn {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #0d3b66;
+  background: white;
+  color: #0d3b66;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.category-btn:hover {
+  background: #0d3b66;
+  color: white;
+}
+
+.active-category {
+  background: #0d3b66;
+  color: white;
+}
+/* Sort Section */
+.sort-section {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.sort-section select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.load-more-container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.load-more-btn {
+  padding: 10px 25px;
+  background: #0d3b66;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.load-more-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Search Input Wrapper */
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+  display: block;
+}
+
+/* Center the search bar */
+.products-page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Focus Effect */
+.search-input:focus {
+  border-color: #0d3b66;
+  box-shadow: 0 0 0 2px rgba(13, 59, 102, 0.15);
+}
+
+/* Desktop Improvement */
+@media (min-width: 768px) {
+  .search-input {
+    font-size: 16px;
+    padding: 14px 18px;
+  }
+}
