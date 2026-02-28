@@ -37,7 +37,6 @@
   color: white;
 }
 
-/* Desktop */
 @media (min-width: 768px) {
   .categories-scroll {
     justify-content: center;

@@ -2,7 +2,6 @@
   background: #f8f9fa;
 }
 
-/* Banner */
 .about-banner {
   background: #0d3b66;
   color: white;
@@ -20,7 +19,6 @@
   opacity: 0.9;
 }
 
-/* Section */
 .about-section {
   padding: 40px 20px;
   max-width: 900px;
@@ -36,7 +34,6 @@
   line-height: 1.6;
 }
 
-/* Vision & Mission */
 .vision-mission {
   display: grid;
   grid-template-columns: 1fr;
@@ -58,7 +55,6 @@
   color: #0d3b66;
 }
 
-/* Stats */
 .stats-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -82,7 +78,6 @@
   margin-bottom: 5px;
 }
 
-/* Desktop */
 @media (min-width: 768px) {
   .vision-mission {
     grid-template-columns: 1fr 1fr;

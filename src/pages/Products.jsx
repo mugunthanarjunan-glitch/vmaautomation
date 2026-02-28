@@ -20,7 +20,6 @@ function Products() {
     ...new Set(products.map((product) => product.category))
   ];
 
-  // FILTER
   let filtered = products.filter((product) => {
     const matchSearch = product.name
       .toLowerCase()
@@ -33,7 +32,7 @@ function Products() {
     return matchSearch && matchCategory;
   });
 
-  // SORT
+  
   if (sortOption === "low-high") {
     filtered.sort((a, b) => a.price - b.price);
   } else if (sortOption === "high-low") {
@@ -42,7 +41,7 @@ function Products() {
     filtered.sort((a, b) => a.name.localeCompare(b.name));
   }
 
-  // Visible products
+  
   const visibleProducts = filtered.slice(0, visibleCount);
 
   return (
@@ -51,19 +50,18 @@ function Products() {
 
       <div className="products-page">
 
-        {/* Search */}
         <input
           type="text"
           placeholder="Search products..."
           value={search}
           onChange={(e) => {
             setSearch(e.target.value);
-            setVisibleCount(6); // Reset on search
+            setVisibleCount(6); 
           }}
           className="search-input"
         />
 
-        {/* Category Filter */}
+        
         <div className="category-filter">
           {categories.map((cat, index) => (
             <button
@@ -75,7 +73,7 @@ function Products() {
               }
               onClick={() => {
                 setSelectedCategory(cat);
-                setVisibleCount(6); // Reset on category change
+                setVisibleCount(6); 
               }}
             >
               {cat}
@@ -83,13 +81,13 @@ function Products() {
           ))}
         </div>
 
-        {/* Sorting */}
+        
         <div className="sort-section">
           <select
             value={sortOption}
             onChange={(e) => {
               setSortOption(e.target.value);
-              setVisibleCount(6); // Reset on sort change
+              setVisibleCount(6); 
             }}
           >
             <option value="default">Sort By</option>
@@ -99,7 +97,7 @@ function Products() {
           </select>
         </div>
 
-        {/* Products Grid */}
+        
         <div className="product-grid">
           {visibleProducts.length > 0 ? (
             visibleProducts.map((product) => (
@@ -112,7 +110,7 @@ function Products() {
           )}
         </div>
 
-        {/* Load More Button */}
+       
         {visibleCount < filtered.length && (
           <div className="load-more-container">
             <button

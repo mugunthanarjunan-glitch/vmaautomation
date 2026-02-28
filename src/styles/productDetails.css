@@ -4,7 +4,6 @@
   margin: auto;
 }
 
-/* Image Section */
 .image-section {
   margin-bottom: 20px;
 }
@@ -39,7 +38,6 @@
   opacity: 1;
 }
 
-/* Details */
 .details-info h2 {
   margin-bottom: 10px;
 }
@@ -73,7 +71,6 @@
   border-radius: 8px;
 }
 
-/* Desktop */
 @media (min-width: 768px) {
   .product-details {
     display: flex;

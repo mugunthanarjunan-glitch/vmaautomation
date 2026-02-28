@@ -9,7 +9,6 @@ function FeaturedProducts() {
     ? productsData
     : productsData.default;
 
-  // Show only first 4 products on home
   const featured = products.slice(0, 4);
 
   return (

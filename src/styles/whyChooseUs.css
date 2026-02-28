@@ -44,7 +44,6 @@
   color: #555;
 }
 
-/* Desktop */
 @media (min-width: 768px) {
   .why-grid {
     grid-template-columns: repeat(4, 1fr);

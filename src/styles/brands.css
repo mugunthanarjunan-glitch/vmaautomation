@@ -31,7 +31,6 @@
   transform: translateY(-5px);
 }
 
-/* Desktop */
 @media (min-width: 768px) {
   .brands-grid {
     grid-template-columns: repeat(4, 1fr);

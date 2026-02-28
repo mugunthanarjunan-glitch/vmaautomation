@@ -2,7 +2,6 @@
   background: #f8f9fa;
 }
 
-/* Banner */
 .contact-banner {
   background: #0d3b66;
   color: white;
@@ -15,7 +14,6 @@
   margin-bottom: 10px;
 }
 
-/* Cards Section */
 .contact-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -45,7 +43,6 @@
   color: #0d3b66;
 }
 
-/* Company Info */
 .company-info {
   padding: 40px 20px;
   text-align: center;
@@ -58,7 +55,6 @@
   color: #0d3b66;
 }
 
-/* Desktop */
 @media (min-width: 768px) {
   .contact-cards {
     grid-template-columns: repeat(4, 1fr);

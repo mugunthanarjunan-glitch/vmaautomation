@@ -1,7 +1,7 @@
 import "../styles/floatingWhatsApp.css";
 
 function FloatingWhatsApp() {
-  const phoneNumber = "918778262206"; // change if needed
+  const phoneNumber = "918778262206";
 
   return (
     <a
