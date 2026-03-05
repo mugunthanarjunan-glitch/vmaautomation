@@ -1,4 +1,5 @@
 import "../styles/floatingWhatsApp.css";
+import { FaWhatsapp } from "react-icons/fa";
 
 function FloatingWhatsApp() {
   const phoneNumber = "918778262206";
@@ -10,7 +11,7 @@ function FloatingWhatsApp() {
       rel="noreferrer"
       className="floating-whatsapp"
     >
-      💬
+      <FaWhatsapp/>
     </a>
   );
 }

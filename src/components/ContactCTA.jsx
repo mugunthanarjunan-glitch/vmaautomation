@@ -1,4 +1,5 @@
 import "../styles/contactCTA.css";
+import { FaWhatsapp , FaPhone } from "react-icons/fa";
 
 function ContactCTA() {
   const phone = "8778262206";
@@ -13,7 +14,7 @@ function ContactCTA() {
 
       <div className="cta-buttons">
         <a href={`tel:${phone}`} className="cta-call">
-          📞 Call Now
+          Call Now <FaPhone/> 
         </a>
 
         <a
@@ -22,7 +23,7 @@ function ContactCTA() {
           rel="noreferrer"
           className="cta-whatsapp"
         >
-          💬 WhatsApp
+          <FaWhatsapp/> WhatsApp
         </a>
       </div>
     </div>

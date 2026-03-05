@@ -1,15 +1,42 @@
-import "../styles/footer.css"
-
+import "../styles/footer.css";
+import { FaPhone, FaWhatsapp } from "react-icons/fa";
+import CompanyLogoFooter from "../logo-images/companylogo-footer.png";
 function Footer() {
+  const phone = "8778262206";
+  const whatsappLink =
+    "https://wa.me/918778262206?text=Hello, I need more details.";
   return (
-   <footer className="footer">
-  <h4>VMA Automation</h4>
-  <p>Industrial Automation & Electrical Solutions</p>
-  <p>📍 Perundurai, Erode, Tamil Nadu</p>
-  <p>📞 8778262206</p>
-  <p>© 2026 All Rights Reserved</p>
-  <p>Dev By WebAstic</p>
-</footer>
+    <footer className="footer">
+      <div className="main-cont">
+        <div className="footer-logo">
+          <img src={CompanyLogoFooter} alt="" />
+        </div>
+        <div>
+          <h4>VMA Automation</h4>
+          <p>Industrial Automation & Electrical Solutions</p>
+          <p>📍 Perundurai, Erode, Tamil Nadu</p>
+          <p>📞 8778262206</p>
+          <p>vmaautomation@gmail.com</p>
+        </div>
+      </div>
+
+      <div>
+        <h4>Contact Us</h4>
+        <div className="logo-cont">
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noreferrer"
+            className="whatsapp-btn"
+          >
+            <FaWhatsapp />
+          </a>
+          <a href={`tel:${phone}`} className="cta-call">
+            <FaPhone />
+          </a>
+        </div>
+      </div>
+    </footer>
   );
 }
 

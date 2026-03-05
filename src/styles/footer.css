@@ -1,10 +1,20 @@
+
 .footer {
   margin-top: 40px;
   padding: 30px 20px;
   background-color: #0d3b66;
   color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  gap: 50px;
   text-align: center;
+  flex-wrap: wrap;
 }
+
 
 .footer h4 {
   margin-bottom: 10px;
@@ -13,4 +23,98 @@
 .footer p {
   margin-bottom: 5px;
   font-size: 14px;
+}
+
+.footer img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+.whatsapp-btn,
+.cta-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 8px 14px;
+  border: 1px solid white;
+  border-radius: 8px;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.whatsapp-btn svg {
+  font-size: 20px;
+}
+
+
+.main-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logo-cont {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+@media (max-width: 1024px) {
+
+  .footer {
+    gap: 30px;
+  }
+
+  .footer img {
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer img {
+    width: 220px;
+  }
+
+  .logo-cont {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .whatsapp-btn,
+  .cta-call {
+    width: 200px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .footer {
+    padding: 25px 15px;
+  }
+
+  .footer img {
+    width: 180px;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+
 }
