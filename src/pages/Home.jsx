@@ -10,7 +10,7 @@ import ContactCTA from "../components/ContactCTA"
 function Home() {
   return (
     <>
-      <Navbar />
+<Navbar />
       <HeroSlider />
       <Categories />
       <FeaturedProducts />

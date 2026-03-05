@@ -5,6 +5,7 @@ import ProductDetails from "./pages/ProductDetails";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import BottomNav from "./components/BottomNav";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <BottomNav/>
     </Router>
   );
 }

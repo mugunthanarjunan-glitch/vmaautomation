@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../styles/navbar.css";
+import ComapnyLogo from "../logo-images/companylogo.png"
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -12,7 +13,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <div className="logo">
-          <Link to="/">VMA Automation</Link>
+          <Link to="/"><img src={ComapnyLogo} alt=""  height={"35px"} width={"150px"}/></Link>
         </div>
 
         <div className="desktop-menu">

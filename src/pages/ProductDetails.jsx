@@ -40,6 +40,7 @@ function ProductDetails() {
           <img
             src={selectedImage}
             alt={product.name}
+        
             className="main-image"
           />
 
