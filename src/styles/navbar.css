@@ -1,6 +1,6 @@
 .navbar {
   background: white;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 2px solid #F4F6F9;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -10,6 +10,7 @@
   max-width: 1200px;
   margin: auto;
   padding: 15px 20px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +19,7 @@
 .logo a {
   font-size: 18px;
   font-weight: bold;
-  color: #0d3b66;
+  color: #0B3D91;
 }
 
 .desktop-menu {
@@ -28,23 +29,24 @@
 
 .desktop-menu a {
   text-decoration: none;
-  color: #333;
+  color: #1C1C1C;
   font-weight: 500;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
 .desktop-menu a:hover {
-  color: #0d3b66;
+  color: #FF6B00;
 }
 
 .desktop-menu .active {
-  color: #0d3b66;
+  color: #0B3D91;
   font-weight: 600;
 }
 
 .menu-btn {
   font-size: 24px;
   cursor: pointer;
+  color: #1C1C1C;
 }
 
 .mobile-menu {
@@ -52,17 +54,23 @@
   flex-direction: column;
   padding: 10px 20px;
   background: white;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #F4F6F9;
 }
 
 .mobile-menu a {
   padding: 12px 0;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #F4F6F9;
   text-decoration: none;
-  color: #333;
+  color: #1C1C1C;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+  color: #FF6B00;
 }
 
 @media (min-width: 768px) {
+
   .desktop-menu {
     display: flex;
   }
@@ -74,4 +82,5 @@
   .mobile-menu {
     display: none;
   }
+
 }

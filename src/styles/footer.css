@@ -1,8 +1,7 @@
-
 .footer {
   margin-top: 40px;
-  padding: 30px 20px;
-  background-color: #0d3b66;
+  padding: 40px 20px 0px 20px;
+  background-color: #0B3D91;
   color: white;
 
   display: flex;
@@ -15,7 +14,6 @@
   flex-wrap: wrap;
 }
 
-
 .footer h4 {
   margin-bottom: 10px;
 }
@@ -23,28 +21,35 @@
 .footer p {
   margin-bottom: 5px;
   font-size: 14px;
+  opacity: 0.9;
 }
 
 .footer img {
-  width: 400px;
+  width: 380px;
   max-width: 100%;
   height: auto;
 }
 
 .whatsapp-btn,
-.cta-call {
+.cta-call1 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
 
-  padding: 8px 14px;
+  padding: 10px 16px;
   border: 1px solid white;
   border-radius: 8px;
 
   font-weight: bold;
   cursor: pointer;
+
+  transition: 0.3s ease;
 }
+.cta-call1{
+  height: 43px;
+}
+
 
 .whatsapp-btn svg {
   font-size: 20px;
@@ -56,7 +61,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 .logo-cont {
   display: flex;
@@ -85,6 +89,7 @@
     flex-direction: column;
     gap: 20px;
     text-align: center;
+    padding-bottom: 80px;
   }
 
   .footer img {
@@ -97,16 +102,22 @@
   }
 
   .whatsapp-btn,
-  .cta-call {
+  .cta-call1 {
     width: 200px;
   }
 
+  .main-cont {
+    flex-direction: column;
+  }
+
 }
+
 
 @media (max-width: 480px) {
 
   .footer {
     padding: 25px 15px;
+    padding-bottom: 80px;
   }
 
   .footer img {
@@ -115,6 +126,10 @@
 
   .footer p {
     font-size: 13px;
+  }
+
+  .main-cont {
+    flex-direction: column;
   }
 
 }

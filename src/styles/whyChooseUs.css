@@ -1,13 +1,13 @@
 .why-section {
   padding: 40px 15px;
-  background: white;
+  background: #F4F6F9;
 }
 
 .why-title {
   text-align: center;
   margin-bottom: 25px;
   font-size: 20px;
-  color: #0d3b66;
+  color: #0B3D91;
   font-weight: 600;
 }
 
@@ -18,25 +18,30 @@
 }
 
 .why-card {
-  background: #f8f9fa;
+  background: white;
   padding: 20px 15px;
   border-radius: 12px;
   text-align: center;
   transition: 0.3s;
+  border-top: 3px solid #FF6B00;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
 .why-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
 .why-icon {
   font-size: 28px;
   margin-bottom: 10px;
+  color: #0B3D91;
 }
 
 .why-card h4 {
   font-size: 14px;
   margin-bottom: 8px;
+  color: #1C1C1C;
 }
 
 .why-card p {

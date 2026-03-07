@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import "../styles/heroSlider.css";
 
-/* Slides data outside component (prevents ESLint warning) */
 const slides = [
   {
     title: "Industrial Automation Solutions",
@@ -23,7 +22,6 @@ const slides = [
 function HeroSlider() {
   const [current, setCurrent] = useState(0);
 
-  /* Auto slide */
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
@@ -47,7 +45,7 @@ function HeroSlider() {
         </div>
       ))}
 
-      {/* Navigation dots */}
+      
       <div className="dots">
         {slides.map((_, index) => (
           <span

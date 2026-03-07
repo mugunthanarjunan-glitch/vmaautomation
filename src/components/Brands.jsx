@@ -1,28 +1,13 @@
 import "../styles/brands.css";
+import AutoScrollImages from "./AutoScrollimages";
 
 function Brands() {
-  const brands = [
-    "Siemens",
-    "Schneider",
-    "ABB",
-    "Delta",
-    "Omron",
-    "L&T",
-    "Teknic",
-    "Selec"
-  ];
 
   return (
     <div className="brands-section">
       <h3 className="brands-title">Brands We Deal With</h3>
 
-      <div className="brands-grid">
-        {brands.map((brand, index) => (
-          <div key={index} className="brand-card">
-            {brand}
-          </div>
-        ))}
-      </div>
+     <AutoScrollImages/>
     </div>
   );
 }

@@ -6,6 +6,7 @@ function Footer() {
   const whatsappLink =
     "https://wa.me/918778262206?text=Hello, I need more details.";
   return (
+    <>
     <footer className="footer">
       <div className="main-cont">
         <div className="footer-logo">
@@ -28,15 +29,18 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
             className="whatsapp-btn"
-          >
+            >
             <FaWhatsapp />
           </a>
-          <a href={`tel:${phone}`} className="cta-call">
+          <a href={`tel:${phone}`} className="cta-call1">
             <FaPhone />
           </a>
         </div>
       </div>
+
+      
     </footer>
+            </>
   );
 }
 

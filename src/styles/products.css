@@ -1,11 +1,37 @@
+.products-page {
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  margin: 0 auto 25px auto;
+  transition: 0.3s ease;
+  display: block;
+}
+
+.search-input:focus {
+  border-color: #0B3D91;
+  box-shadow: 0 0 0 2px rgba(11,61,145,0.15);
+}
+
+
+
 .category-filter {
   display: flex;
   gap: 10px;
   overflow-x: auto;
   overflow-y: hidden;
-  margin-bottom: 20px;
   padding-bottom: 5px;
-  width: 100%;
+  margin-bottom: 15px; 
 }
 
 .category-filter::-webkit-scrollbar {
@@ -15,27 +41,30 @@
 .category-btn {
   padding: 8px 14px;
   border-radius: 20px;
-  border: 1px solid #0d3b66;
+  border: 1px solid #0B3D91;
   background: white;
-  color: #0d3b66;
+  color: #0B3D91;
   cursor: pointer;
   white-space: nowrap;
   transition: 0.3s;
 }
 
 .category-btn:hover {
-  background: #0d3b66;
+  background: #0B3D91;
   color: white;
 }
 
 .active-category {
-  background: #0d3b66;
+  background: #0B3D91;
   color: white;
 }
 
+
+
 .sort-section {
-  margin-bottom: 20px;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px; 
 }
 
 .sort-section select {
@@ -43,25 +72,25 @@
   border-radius: 6px;
   border: 1px solid #ccc;
 }
+
+
+
 .product-grid {
+  margin-top: 10px; 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
 
-@media (min-width: 768px) {
-  .product-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+
 .load-more-container {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .load-more-btn {
   padding: 10px 25px;
-  background: #0d3b66;
+  background: #0B3D91;
   color: white;
   border-radius: 8px;
   border: none;
@@ -73,34 +102,27 @@
   transform: scale(1.05);
 }
 
-.search-input {
-  width: 100%;
-  max-width: 500px;
-  padding: 12px 15px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  outline: none;
-  font-size: 14px;
-  margin-bottom: 20px;
-  transition: 0.3s ease;
-  display: block;
-}
-
-.products-page {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.search-input:focus {
-  border-color: #0d3b66;
-  box-shadow: 0 0 0 2px rgba(13, 59, 102, 0.15);
-}
 
 @media (min-width: 768px) {
+
+  .product-grid {
+    padding-top: 10px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .search-input {
     font-size: 16px;
     padding: 14px 18px;
   }
+
+}
+
+
+
+@media (min-width: 1024px) {
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }

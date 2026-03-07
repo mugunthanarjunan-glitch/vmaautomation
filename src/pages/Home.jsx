@@ -6,11 +6,12 @@ import FeaturedProducts from "../components/FeaturedProducts"
 import WhyChooseUs from "../components/WhyChooseUs";
 import Brands from "../components/Brands";
 import ContactCTA from "../components/ContactCTA"
+import Companydet from "../components/Companydet";
 
 function Home() {
   return (
     <>
-<Navbar />
+      <Navbar />
       <HeroSlider />
       <Categories />
       <FeaturedProducts />
@@ -18,6 +19,7 @@ function Home() {
       <Brands />
       <ContactCTA />
       <Footer />
+      <Companydet/>
     </>
   );
 }

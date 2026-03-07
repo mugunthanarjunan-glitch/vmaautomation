@@ -1,0 +1,32 @@
+.co{
+    background-color: #0B3D91;
+    text-align: center;
+    color: white;
+
+}
+.rights{
+    align-self: center;
+    padding: 10px;
+}
+.devco{
+    text-align: end;
+}
+
+@media (max-width :1024px) {
+    .devco{
+padding: 0px 10px 10px 10px;
+
+    }
+}
+@media (max-width :768px) {
+    .devco{
+padding: 0px 10px 80px 10px;
+
+    }
+}
+@media (max-width :480px) {
+    .devco{
+padding: 0px 10px 80px 10px;
+
+    }
+}

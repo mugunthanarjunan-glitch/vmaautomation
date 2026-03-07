@@ -2,6 +2,7 @@
   padding: 30px 20px;
   max-width: 1200px;
   margin: auto;
+  background: #F4F6F9;
 }
 
 .image-section {
@@ -12,6 +13,7 @@
   width: 100%;
   border-radius: 12px;
   margin-bottom: 15px;
+  background: white;
 }
 
 .thumbnail-row {
@@ -22,11 +24,13 @@
 .thumbnail {
   width: 70px;
   height: 70px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
   cursor: pointer;
   opacity: 0.7;
-  transition: 0.3s;
+  background: white;
+  padding: 5px;
+  transition: 0.3s ease;
 }
 
 .thumbnail:hover {
@@ -34,22 +38,24 @@
 }
 
 .active-thumb {
-  border: 2px solid #0d3b66;
+  border: 2px solid #0B3D91;
   opacity: 1;
 }
 
 .details-info h2 {
   margin-bottom: 10px;
+  color: #1C1C1C;
 }
 
 .details-info h3 {
-  color: #0d3b66;
+  color: #0B3D91;
   margin-bottom: 15px;
 }
 
 .details-info p {
   margin-bottom: 20px;
   line-height: 1.6;
+  color: #1C1C1C;
 }
 
 .details-info button {
@@ -59,19 +65,33 @@
   color: white;
   border-radius: 8px;
   font-weight: bold;
+  border: none;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.details-info button:hover {
+  transform: scale(1.03);
 }
 
 .details-info a {
   display: block;
   text-align: center;
   padding: 12px;
-  background-color: #0d3b66;
+  background-color: #FF6B00;
   color: white;
   border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.details-info a:hover {
+  background: #e55f00;
 }
 
 @media (min-width: 768px) {
+
   .product-details {
     display: flex;
     gap: 40px;
@@ -84,4 +104,5 @@
   .details-info {
     width: 50%;
   }
+
 }

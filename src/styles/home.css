@@ -1,9 +1,13 @@
 .slider {
-  height: 250px;
+  min-height: 250px;
+  height: 40vh;            
+  max-height: 400px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f8f9fa;
+
+  background: #F4F6F9;     
   text-align: center;
   padding: 20px;
 }

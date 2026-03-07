@@ -1,5 +1,5 @@
 .cta-section {
-  background: #0d3b66;
+  background: #0B3D91;
   color: white;
   text-align: center;
   padding: 50px 20px;
@@ -29,12 +29,18 @@
   border-radius: 8px;
   font-weight: bold;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
+
 .cta-call {
-  background: white;
-  color: #0d3b66;
+  background: #FF6B00;
+  color: white;
+}
+
+.cta-call:hover {
+  background: #e55f00;
+  transform: scale(1.05);
 }
 
 .cta-whatsapp {
@@ -42,15 +48,12 @@
   color: white;
 }
 
-.cta-call:hover {
-  transform: scale(1.05);
-}
-
 .cta-whatsapp:hover {
   transform: scale(1.05);
 }
 
 @media (min-width: 768px) {
+
   .cta-section h2 {
     font-size: 28px;
   }
@@ -58,4 +61,5 @@
   .cta-section p {
     font-size: 16px;
   }
+
 }

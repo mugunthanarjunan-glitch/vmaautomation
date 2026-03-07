@@ -7,7 +7,7 @@
   margin-bottom: 15px;
   font-size: 18px;
   font-weight: 600;
-  color: #0d3b66;
+  color: #0B3D91;
 }
 
 .categories-scroll {
@@ -24,17 +24,20 @@
 .category-card {
   min-width: 100px;
   padding: 12px 15px;
-  background: #f1f3f5;
+  background: #F4F6F9;
   border-radius: 10px;
   text-align: center;
   font-weight: 500;
+  color: #1C1C1C;
   cursor: pointer;
-  transition: 0.3s;
+  border: 1px solid #F4F6F9;
+  transition: all 0.3s ease;
 }
 
 .category-card:hover {
-  background: #0d3b66;
+  background: #0B3D91;
   color: white;
+  border-color: #FF6B00;
 }
 
 @media (min-width: 768px) {
