@@ -16,7 +16,7 @@ function ProductCard({ product }) {
           e.stopPropagation();
           const msg = `Hello, I am interested in ${product.name}`;
           window.open(
-            `https://wa.me/918778262206?text=${encodeURIComponent(msg)}`,
+            `https://wa.me/917373122980?text=${encodeURIComponent(msg)}`,
             "_blank"
           );
         }}

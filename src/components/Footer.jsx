@@ -2,9 +2,9 @@ import "../styles/footer.css";
 import { FaPhone, FaWhatsapp } from "react-icons/fa";
 import CompanyLogoFooter from "../logo-images/companylogo-footer.png";
 function Footer() {
-  const phone = "8778262206";
+  const phone = "7373122980";
   const whatsappLink =
-    "https://wa.me/918778262206?text=Hello, I need more details.";
+    "https://wa.me/917373122980?text=Hello, I need more details.";
   return (
     <>
     <footer className="footer">
@@ -15,8 +15,8 @@ function Footer() {
         <div>
           <h4>VMA Automation</h4>
           <p>Industrial Automation & Electrical Solutions</p>
-          <p>📍 Perundurai, Erode, Tamil Nadu</p>
-          <p>📞 8778262206</p>
+          <p>Perundurai, Erode, Tamil Nadu</p>
+          <p>7373122980</p>
           <p>vmaautomation@gmail.com</p>
         </div>
       </div>

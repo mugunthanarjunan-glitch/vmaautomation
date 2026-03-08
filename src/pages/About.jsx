@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/about.css";
-
+import Companydet from "../components/Companydet" 
 function About() {
   return (
     <>
@@ -44,7 +44,7 @@ function About() {
 
         <div className="stats-section">
           <div className="stat-box">
-            <h3>50+</h3>
+            <h3>1000+</h3>
             <p>Products</p>
           </div>
           <div className="stat-box">
@@ -52,8 +52,8 @@ function About() {
             <p>Happy Clients</p>
           </div>
           <div className="stat-box">
-            <h3>5+</h3>
-            <p>Years Experience</p>
+            <h3>50+</h3>
+            <p>Sucessfull Installations</p>
           </div>
           <div className="stat-box">
             <h3>24/7</h3>
@@ -64,6 +64,7 @@ function About() {
       </div>
 
       <Footer />
+      <Companydet/>
     </>
   );
 }

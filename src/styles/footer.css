@@ -86,7 +86,7 @@
 @media (max-width: 768px) {
 
   .footer {
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     text-align: center;
     padding-bottom: 80px;
@@ -100,13 +100,14 @@
     flex-direction: column;
     gap: 10px;
   }
-
+  
   .whatsapp-btn,
   .cta-call1 {
     width: 200px;
   }
-
+  
   .main-cont {
+    text-align: left;
     flex-direction: column;
   }
 

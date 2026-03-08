@@ -1,10 +1,10 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/contact.css";
-
+import Companydet from "../components/Companydet"
 function Contact() {
-  const phone = "8778262206";
-  const whatsapp = "918778262206";
+  const phone = "7373122980";
+  const whatsapp = "917373122980";
   const email = "vmaautomation@gmail.com";
 
   return (
@@ -58,6 +58,7 @@ function Contact() {
       </div>
 
       <Footer />
+      <Companydet/>
     </>
   );
 }

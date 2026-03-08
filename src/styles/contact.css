@@ -66,6 +66,7 @@
 
   .contact-cards {
     grid-template-columns: repeat(4, 1fr);
+    width: 100px;
   }
 
   .contact-banner h1 {

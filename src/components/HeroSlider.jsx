@@ -16,6 +16,11 @@ const slides = [
     title: "Custom Panel Manufacturing",
     subtitle: "Professional Engineering Support",
     image: "/images/heroslider/imagecopy2.png"
+  },
+  {
+    title: "Good quality Industrial Products",
+    subtitle: "24/7 Services",
+    image: "/images/heroslider/imagecopy3.png"
   }
 ];
 

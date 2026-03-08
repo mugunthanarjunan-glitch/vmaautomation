@@ -5,12 +5,9 @@ function Companydet() {
     <div className='co'>
         <hr style={{width:"100%",color:"white"}} />
     <div className='rights'>
-        <p>All the Rights are Reserved @2026</p>
+        <p style={{fontSize:"12px"}}>All the Rights are Reserved @2026-Dev by WebAstic</p>
       </div>
       
-      <div className='devco'>
-        <p>Dev by WebAstic</p>
-    </div>
     </div>
   )
 }

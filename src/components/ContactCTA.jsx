@@ -2,10 +2,10 @@ import "../styles/contactCTA.css";
 import { FaWhatsapp , FaPhone } from "react-icons/fa";
 
 function ContactCTA() {
-  const phone = "8778262206";
+  const phone = "7373122980";
 
   const whatsappLink =
-    "https://wa.me/918778262206?text=Hello, I need more details.";
+    "https://wa.me/917373122980?text=Hello, I need more details.";
 
   return (
     <div className="cta-section">
