@@ -8,7 +8,7 @@ function ProductCard({ product }) {
       className="product-card"
       onClick={() => navigate(`/product/${product.id}`)}
     >
-      <img src={product.images[0]} alt={product.name} />
+      <img src={`https://vmaautomation.in/${product.images[0]}`} alt={product.name} />
       <h4>{product.name}</h4>
       <p>₹ {product.price}</p>
       <button

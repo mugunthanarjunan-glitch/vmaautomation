@@ -15,7 +15,7 @@ function FeaturedProducts() {
 
       try {
 
-        const res = await axios.get("https://vmaautomation.in/api/get_products.php");
+        const res = await axios.get("https://vmaautomation.in/api/getProducts.php");
 
         setProducts(res.data);
 
@@ -58,7 +58,7 @@ function FeaturedProducts() {
             onClick={() => navigate(`/product/${product.id}`)}
           >
 
-            <img src={product.images[0]} alt={product.name} />
+            <img src={`https://vmaautomation.in/${product.images[0]}`} alt={product.name} />
 
             <h4>{product.name}</h4>
 

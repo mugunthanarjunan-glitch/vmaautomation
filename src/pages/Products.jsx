@@ -21,7 +21,7 @@ function Products() {
 
       try {
 
-        const res = await axios.get("/api/get_products.php");
+        const res = await axios.get("https://vmaautomation.in/api/getProducts.php");
 
         setProducts(res.data);
 

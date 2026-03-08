@@ -21,7 +21,7 @@ function AdminDashboard() {
   // FETCH PRODUCTS
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("https://vmaautomation.in/api/get_products.php")
+      const res = await axios.get("https://vmaautomation.in/api/getProducts.php")
       setProducts(res.data);
     } catch (error) {
       console.log(error);
@@ -34,7 +34,6 @@ function AdminDashboard() {
       navigate("/admin/login")
     }
     else{
-
       fetchProducts();
     }
   }, []);
@@ -70,21 +69,22 @@ function AdminDashboard() {
     formData.append("category", form.category);
     formData.append("description", form.description);
 
+    // REQUIRED FIX
     images.forEach((img) => {
-      formData.append("images", img);
+      formData.append("images[]", img);
     });
 
     try {
 
       if (editingId) {
         formData.append("id",editingId)
-        await axios.post("https://vmaautomation.in/api/update_product.php", formData)
+        await axios.post("https://vmaautomation.in/api/updateProduct.php", formData)
 
         alert("Product Updated");
 
       } else {
 
-        await axios.post("https://vmaautomation.in/api/create_product.php", formData)
+        await axios.post("https://vmaautomation.in/api/createProduct.php", formData)
 
         alert("Product Added");
       }
@@ -128,7 +128,7 @@ function AdminDashboard() {
 
     try {
 
-      axios.delete(`https://vmaautomation.in/api/delete_product.php?id=${id}`)
+      await axios.get(`https://vmaautomation.in/api/deleteProduct.php?id=${id}`)
 
       fetchProducts();
 
@@ -238,7 +238,7 @@ function AdminDashboard() {
 
                 <img
                   key={index}
-                  src={img}
+                  src={`https://vmaautomation.in/${img}`}
                   alt="product"
                 />
 

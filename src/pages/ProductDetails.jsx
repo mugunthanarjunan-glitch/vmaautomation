@@ -4,12 +4,14 @@ import axios from "axios";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/productDetails.css";
-import Companydet from "../components/Companydet"
+import Companydet from "../components/Companydet";
+
 function ProductDetails() {
-  
+
   const { id } = useParams();
 
   const [products, setProducts] = useState([]);
+  const [selectedImage, setSelectedImage] = useState("");
 
   useEffect(() => {
 
@@ -17,9 +19,10 @@ function ProductDetails() {
 
       try {
 
-        const res = await axios.get("/api/get_products.php");
+        const res = await axios.get("https://vmaautomation.in/api/getProducts.php");
 
         setProducts(res.data);
+        console.log(res.data)
 
       } catch (error) {
 
@@ -33,18 +36,23 @@ function ProductDetails() {
 
   }, []);
 
+  const product = products.find((p) => p.id == id);
 
-  const product = products.find((p) => p.id === parseInt(id));
+  // set default image when product loads
+  useEffect(() => {
+    if (product && product.images && product.images.length > 0) {
+      setSelectedImage(product.images[0]);
+    }
+  }, [product]);
 
-  const [selectedImage, setSelectedImage] = useState(
-    product?.images?.[0]
-  );
-
+  // show loading while fetching
+  if (products.length === 0) {
+    return <h2 style={{ padding: "20px" }}>Loading...</h2>;
+  }
 
   if (!product) {
     return <h2 style={{ padding: "20px" }}>Product Not Found</h2>;
   }
-
 
   const handleWhatsApp = () => {
 
@@ -57,7 +65,6 @@ function ProductDetails() {
 
   };
 
-
   return (
     <>
       <Navbar />
@@ -67,7 +74,7 @@ function ProductDetails() {
         <div className="image-section">
 
           <img
-            src={selectedImage}
+            src={`https://vmaautomation.in/${selectedImage}`}
             alt={product.name}
             className="main-image"
           />
@@ -78,7 +85,7 @@ function ProductDetails() {
 
               <img
                 key={index}
-                src={img}
+                src={`https://vmaautomation.in/${img}`}
                 alt="thumbnail"
                 className={
                   selectedImage === img
@@ -93,7 +100,6 @@ function ProductDetails() {
           </div>
 
         </div>
-
 
         <div className="details-info">
 
@@ -116,7 +122,8 @@ function ProductDetails() {
       </div>
 
       <Footer />
-      <Companydet/>
+      <Companydet />
+
     </>
   );
 }
