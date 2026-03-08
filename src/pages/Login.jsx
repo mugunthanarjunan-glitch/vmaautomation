@@ -11,28 +11,25 @@ function Login() {
   const [password,setPassword] = useState("");
 
   const handleLogin = async (e) => {
+  e.preventDefault();
 
-    e.preventDefault();
+  try {
+    const res = await axios.post("https://vmaautomation.in/api/login.php", {
+  username,
+  password
+});
 
-    try {
+if (res.data.success) {
+  localStorage.setItem("success",res.data.success)
+  navigate("/admin/dashboard");
+} else {
+  alert(res.data.message);
+}
 
-      const res = await axios.post(
-       "https://vmaautomation.in/api/login.php",
-        { username, password }
-      );
-
-      const token = res.data.token
-      localStorage.setItem("token",token)
-      alert(res.data.message);
-      navigate("/admin/dashboard");
-
-    } catch (err) {
-
-      alert("Invalid username or password");
-
-    }
-
-  };
+  } catch (err) {
+    alert("Login failed. Please try again.");
+  }
+};
 
   return (
 

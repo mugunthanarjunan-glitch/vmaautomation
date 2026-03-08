@@ -29,7 +29,7 @@ function AdminDashboard() {
   };
 
   useEffect(() => {
-    const token = localStorage.getItem("token")
+    const token = localStorage.getItem("success")
     if(!token){
       navigate("/admin/login")
     }
@@ -200,7 +200,7 @@ function AdminDashboard() {
 
             <img
               key={index}
-              src={img}
+              src={`https://vmaautomation.in/${img}`}
               alt="preview"
             />
 
@@ -269,7 +269,10 @@ function AdminDashboard() {
         ))}
 
       </div>
-
+        <button style={{backgroundColor:"#0B3D91",color:"white",padding:"10px 30px",borderRadius:"5px",marginBottom:"100px"}} onClick={()=>{
+          localStorage.removeItem("success")
+          navigate("/admin/login")
+        }}>Logout</button>
     </div>
   );
 }

@@ -102,7 +102,19 @@
   transform: scale(1.05);
 }
 
+@media (min-width: 485px) {
 
+  .product-grid {
+    padding-top: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-input {
+    font-size: 16px;
+    padding: 14px 18px;
+  }
+
+}
 @media (min-width: 768px) {
 
   .product-grid {
@@ -116,6 +128,7 @@
   }
 
 }
+
 
 
 
