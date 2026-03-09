@@ -17,6 +17,7 @@
 
 .contact-cards {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   padding: 40px 20px;
@@ -66,7 +67,8 @@
 
   .contact-cards {
     grid-template-columns: repeat(4, 1fr);
-    width: 100px;
+
+    width: 80px;
   }
 
   .contact-banner h1 {
