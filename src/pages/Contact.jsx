@@ -20,7 +20,7 @@ function Contact() {
 
         <div className="contact-cards">
           <a href={`tel:${phone}`} className="contact-card">
-            <h3>📞 Call</h3>
+            <h3><i class="bi bi-telephone-fill"></i> Call</h3>
             <p>{phone}</p>
           </a>
 
@@ -30,7 +30,7 @@ function Contact() {
             rel="noreferrer"
             className="contact-card"
           >
-            <h3>💬 WhatsApp</h3>
+            <h3><i class="bi bi-whatsapp"></i> WhatsApp</h3>
             <p>Chat with us</p>
           </a>
 
@@ -38,21 +38,21 @@ function Contact() {
             href={`mailto:${email}?subject=Product Inquiry`}
             className="contact-card"
           >
-            <h3>📧 Email</h3>
+            <h3><i class="bi bi-envelope-fill"></i> Email</h3>
             <p>{email}</p>
           </a>
 
           <a href={`sms:${phone}`} className="contact-card">
-            <h3>📱 SMS</h3>
+            <h3><i class="bi bi-chat-dots-fill"></i> SMS</h3>
             <p>Send a message</p>
           </a>
         </div>
 
         <div className="company-info">
           <h2>Our Office</h2>
-          <p>📍 Perundurai, Erode, Tamil Nadu</p>
-          <p>📞 8778262206</p>
-          <p>📧 vmaautomation@gmail.com</p>
+          <p><i class="bi bi-geo-alt-fill"></i> Perundurai, Erode, Tamil Nadu</p>
+          <p><i class="bi bi-telephone-fill"></i> 8778262206</p>
+          <p><i class="bi bi-envelope-fill"></i> vmaautomation@gmail.com</p>
         </div>
 
       </div>

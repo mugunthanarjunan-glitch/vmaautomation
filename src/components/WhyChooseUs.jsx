@@ -3,22 +3,22 @@ import "../styles/whyChooseUs.css";
 function WhyChooseUs() {
   const features = [
     {
-      icon: "✅",
+      icon: "bi bi-patch-check-fill",
       title: "Genuine Products",
       desc: "100% original branded industrial products."
     },
     {
-      icon: "⚙️",
+      icon: "bi bi-headset",
       title: "Technical Support",
       desc: "Professional automation assistance."
     },
     {
-      icon: "🚚",
+      icon: "bi bi-box-seam",
       title: "Fast Delivery",
       desc: "Quick dispatch and reliable shipping."
     },
     {
-      icon: "💰",
+      icon: "bi bi-tags",
       title: "Best Pricing",
       desc: "Competitive market pricing."
     }
@@ -31,7 +31,7 @@ function WhyChooseUs() {
       <div className="why-grid">
         {features.map((item, index) => (
           <div key={index} className="why-card">
-            <div className="why-icon">{item.icon}</div>
+            <div className="why-icon"><i style={{fontSize:"50px"}} className={item.icon}></i></div>
             <h4>{item.title}</h4>
             <p>{item.desc}</p>
           </div>
