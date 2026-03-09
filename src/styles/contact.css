@@ -3,6 +3,8 @@
   color: #1C1C1C;
 }
 
+/* Banner */
+
 .contact-banner {
   background: #0B3D91;
   color: white;
@@ -15,14 +17,16 @@
   margin-bottom: 10px;
 }
 
+/* Contact Cards */
+
 .contact-cards {
   display: grid;
-  justify-content: center;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  gap: 20px;
   padding: 40px 20px;
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
+  justify-items: center;
 }
 
 .contact-card {
@@ -32,8 +36,12 @@
   text-align: center;
   text-decoration: none;
   color: #1C1C1C;
+  width: 100%;
+  max-width: 200px;
+
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   border-top: 3px solid #FF6B00;
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -46,6 +54,8 @@
   margin-bottom: 8px;
   color: #0B3D91;
 }
+
+/* Company Info */
 
 .company-info {
   padding: 40px 20px;
@@ -61,14 +71,15 @@
 
 .company-info p {
   color: #1C1C1C;
+  margin: 5px 0;
 }
+
+/* Responsive */
 
 @media (min-width: 768px) {
 
   .contact-cards {
     grid-template-columns: repeat(4, 1fr);
-
-    width: 80px;
   }
 
   .contact-banner h1 {
