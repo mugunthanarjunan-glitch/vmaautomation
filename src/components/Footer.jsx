@@ -15,9 +15,11 @@ function Footer() {
         <div>
           <h4>VMA Automation</h4>
           <p>Industrial Automation & Electrical Solutions</p>
+          <p>st -1, 51/5, ANNAMAR STREET MAIN ROAD, Nallampatti,</p>
           <p>Perundurai, Erode, Tamil Nadu</p>
           <p>7373122980</p>
           <p>vmaautomation@gmail.com</p>
+          <p>GSTN: 33GONPB4521Q1ZM</p>
         </div>
       </div>
 

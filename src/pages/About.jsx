@@ -22,6 +22,9 @@ function About() {
             Sensors and Electrical Components.
             We deliver reliable automation solutions for various industries.
           </p>
+          <br />
+          <h2>Check Us</h2>
+          <p>GSTN: 33GONPB4521Q1ZM</p>
         </div>
 
         <div className="vision-mission">
@@ -32,7 +35,6 @@ function About() {
               delivering innovative and reliable industrial products.
             </p>
           </div>
-
           <div className="vm-card">
             <h3>Our Mission</h3>
             <p>
@@ -41,6 +43,7 @@ function About() {
             </p>
           </div>
         </div>
+        
 
         <div className="stats-section">
           <div className="stat-box">

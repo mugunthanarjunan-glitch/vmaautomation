@@ -50,7 +50,7 @@ function Contact() {
 
         <div className="company-info">
           <h2>Our Office</h2>
-          <p><i class="bi bi-geo-alt-fill"></i> Perundurai, Erode, Tamil Nadu</p>
+          <p><p><i class="bi bi-geo-alt-fill"></i>st -1, 51/5, ANNAMAR STREET MAIN ROAD, Nallampatti,</p> <p>Perundurai, Erode, Tamil Nadu</p></p>
           <p><i class="bi bi-telephone-fill"></i> 8778262206</p>
           <p><i class="bi bi-envelope-fill"></i> vmaautomation@gmail.com</p>
         </div>
